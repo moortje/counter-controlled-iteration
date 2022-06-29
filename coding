@@ -1,0 +1,23 @@
+// Class-average problem with counter-controlled iteration
+#include <iostream>
+
+// function main begins program execution
+int main()
+{
+	int counter = 1; // initialize number of grades enetered
+	int total = 0; // initialize total of grades
+	int grade; // grade value
+	float average; // avaerage value
+
+	while (counter <=10) // loop ten times
+	{
+		printf_s("Enter grade: "); // prompt
+		scanf_s("%d", &grade); // read grade
+		total = total + grade; // add grade to total
+		counter++; // increment counter
+	}
+
+	average = (float) total / counter; // set class average
+	printf_s("The class average is %.2f.", average); // display result
+
+} // end function main
