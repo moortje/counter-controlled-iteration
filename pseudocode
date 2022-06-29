@@ -1,0 +1,11 @@
+Set total to zero
+Set counter to one
+
+While counter is less than or equal to ten
+  Input grade
+  Add grade to total
+  Add one to counter
+ 
+Set average to total divided by counter
+
+Print average
